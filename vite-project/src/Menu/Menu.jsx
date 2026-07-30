@@ -1,8 +1,9 @@
-import Dish from "./Dish";
+import styles from "./Menu.module.css";
+import Dish from "../Productcard/Dish";
 
 function Menu({ dishes }) {
   return (
-    <div className="Menu">
+    <div className={styles.menu}>
       {dishes.map((dish) => (
         <Dish key={dish.id} dish={dish} />
       ))}
